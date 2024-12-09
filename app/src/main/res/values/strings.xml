@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EduTechProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="featurename">FeatureName</string>
+
+    <!--    Features Names  -->
+    <string name="feature_name_contact_list">Contact List</string>
+    <string name="feature_name_async_tasks">Async Tasks</string>
 </resources>
