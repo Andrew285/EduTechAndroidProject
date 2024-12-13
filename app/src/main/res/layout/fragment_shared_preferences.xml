@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".features.shared_prefs.SharedPreferencesFragment"
+    android:layout_marginHorizontal="32dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:hint="Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:hint="Age">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/isStudentCheckBox"
+        android:text="Are you Student?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="34dp"
+        >
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select the color: "/>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+            
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/red"
+                style="@style/colorBoxStyle"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/blue"
+                style="@style/colorBoxStyle"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/green"
+                style="@style/colorBoxStyle"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        />
+
+    <com.example.edutechproject.views.InfoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/saveSharedPrefsInfo"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

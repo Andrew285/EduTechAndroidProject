@@ -7,4 +7,17 @@
     <!--    Features Names  -->
     <string name="feature_name_contact_list">Contact List</string>
     <string name="feature_name_async_tasks">Async Tasks</string>
+
+    <!--    SharedPreferencesFragment strings  -->
+    <string name="feature_name_shared_prefs">Shared Preferences</string>
+    <string name="enterToSaveInfo">Enter values to see how Shared Preferences</string>
+    <string name="saveSharedPrefsInfo">Click here to save data using Shared Preferences</string>
+    <string name="afterSaveSharedPrefsInfo">
+        Now you can close your app completely and open again.
+        The data will be restored
+    </string>
+
+    <!--    Other strings  -->
+    <string name="save">Save</string>
+    <string name="customInfoText">Custom Info Text</string>
 </resources>

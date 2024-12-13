@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.edutechproject.R
+import com.example.edutechproject.adapters.ContactRecyclerViewAdapter
 import com.example.edutechproject.databinding.FragmentContactsBinding
 
 class ContactsFragment : Fragment() {

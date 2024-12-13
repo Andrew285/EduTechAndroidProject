@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="infoImageViewSize">28dp</dimen>
+
+    <!--  TEXT SIZE  -->
+    <dimen name="textSizeNormal">16sp</dimen>
+</resources>
