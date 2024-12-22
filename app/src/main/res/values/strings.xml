@@ -11,7 +11,9 @@
     <!--    SharedPreferencesFragment strings  -->
     <string name="feature_name_shared_prefs">Shared Preferences</string>
     <string name="enterToSaveInfo">Enter values to see how Shared Preferences</string>
-    <string name="saveSharedPrefsInfo">Click here to save data using Shared Preferences</string>
+    <string name="saveSharedPrefsInfo">Save data using Shared Preferences</string>
+    <string name="loadSharedPrefsInfo">Reads saved data using Shared Preferences</string>
+    <string name="clearUserData">Clear all data</string>
     <string name="afterSaveSharedPrefsInfo">
         Now you can close your app completely and open again.
         The data will be restored
@@ -19,5 +21,9 @@
 
     <!--    Other strings  -->
     <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="clear">Clear</string>
     <string name="customInfoText">Custom Info Text</string>
+
+    <string name="preference_file_key">com.example.edutechproject.PREFERENCE_FILE_KEY</string>
 </resources>

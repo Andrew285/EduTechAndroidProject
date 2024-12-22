@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".features.shared_prefs.SharedPreferencesFragment"
-    android:layout_marginHorizontal="32dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.SharedPreferencesFragment"
+    android:paddingHorizontal="32dp"
     android:orientation="vertical">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -49,39 +50,21 @@
         android:gravity="center_vertical"
         android:layout_marginTop="34dp"
         >
-        
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Select the color: "/>
-        
-        <LinearLayout
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/colorContainer"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_vertical">
-            
-            <View
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@color/red"
-                style="@style/colorBoxStyle"/>
-
-            <View
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@color/blue"
-                style="@style/colorBoxStyle"/>
-
-            <View
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@color/green"
-                style="@style/colorBoxStyle"/>
-
-
-        </LinearLayout>
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
     <com.google.android.material.divider.MaterialDivider
@@ -90,16 +73,48 @@
         android:layout_marginTop="14dp"
         />
 
-    <com.example.edutechproject.views.InfoTextView
+    <com.example.edutechproject.view.custom.InfoTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="24dp"
+        app:textSize="12sp"
         android:text="@string/saveSharedPrefsInfo"/>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/save"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.example.edutechproject.view.custom.InfoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:textSize="12sp"
+        android:text="@string/saveSharedPrefsInfo"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.example.edutechproject.view.custom.InfoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:textSize="12sp"
+        android:text="@string/saveSharedPrefsInfo"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
         android:layout_marginTop="14dp"
         android:layout_gravity="center_horizontal"/>
 

@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.edutechproject.R
-import com.example.edutechproject.adapters.HomeRecyclerViewAdapter
+import com.example.edutechproject.view.adapters.HomeRecyclerViewAdapter
 import com.example.edutechproject.databinding.FragmentHomeBinding
 import com.example.edutechproject.features.async_tasks.AsyncTasksFragment
 import com.example.edutechproject.features.contacts.ContactsFragment
-import com.example.edutechproject.features.shared_prefs.SharedPreferencesFragment
+import com.example.edutechproject.view.SharedPreferencesFragment
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding

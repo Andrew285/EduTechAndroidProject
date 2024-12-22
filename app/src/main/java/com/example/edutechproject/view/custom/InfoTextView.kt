@@ -1,4 +1,4 @@
-package com.example.edutechproject.views
+package com.example.edutechproject.view.custom
 
 import android.content.Context
 import android.util.AttributeSet
@@ -15,8 +15,13 @@ class InfoTextView @JvmOverloads constructor(
 {
     private val imageView: ImageView
     private val textView: TextView
+    private val horizontalSpace: Int = 16 // 16 pixels, for example
 
     init {
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.InfoTextView)
+        val textSize = typedArray.getDimension(R.styleable.InfoTextView_textSize, 8f)
+        val textFromView = typedArray.getString(R.styleable.InfoTextView_android_text) ?: resources.getString(R.string.customInfoText)
+        typedArray.recycle()
 
         imageView = ImageView(context).apply {
             setImageResource(R.drawable.info_vector)
@@ -27,8 +32,10 @@ class InfoTextView @JvmOverloads constructor(
         }
 
         textView = TextView(context).apply {
-            text = resources.getString(R.string.customInfoText)
-            textSize = resources.getDimension(R.dimen.textSizeNormal)
+            this.text = textFromView
+            this.textSize = textSize / 2
+            maxLines = Int.MAX_VALUE // Allow unlimited lines
+            ellipsize = null
         }
 
         addView(imageView)
@@ -39,7 +46,7 @@ class InfoTextView @JvmOverloads constructor(
         measureChild(imageView, widthMeasureSpec, heightMeasureSpec)
         measureChild(textView, widthMeasureSpec, heightMeasureSpec)
 
-        val width = imageView.measuredWidth + textView.measuredWidth
+        val width = imageView.measuredWidth + textView.measuredWidth + horizontalSpace
         val height = maxOf(imageView.measuredHeight, textView.measuredHeight)
 
         setMeasuredDimension(width, height)
@@ -55,7 +62,7 @@ class InfoTextView @JvmOverloads constructor(
             imageTop + imageView.measuredHeight
         )
 
-        val textLeft = imageLeft + imageView.measuredWidth + paddingRight
+        val textLeft = imageLeft + imageView.measuredWidth + paddingRight + horizontalSpace
         val textTop = paddingTop
         textView.layout(
             textLeft,

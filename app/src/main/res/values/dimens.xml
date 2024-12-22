@@ -3,5 +3,5 @@
     <dimen name="infoImageViewSize">28dp</dimen>
 
     <!--  TEXT SIZE  -->
-    <dimen name="textSizeNormal">16sp</dimen>
+    <dimen name="textSizeNormal">8sp</dimen>
 </resources>
