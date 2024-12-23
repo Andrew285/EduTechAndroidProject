@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edutechproject.R
-import com.example.edutechproject.features.home.HomeFeatureModel
+import com.example.edutechproject.models.HomeFeatureModel
 
 class HomeRecyclerViewAdapter(private val featuresList: List<HomeFeatureModel>): RecyclerView.Adapter<HomeRecyclerViewAdapter.FeatureViewHolder>() {
     private lateinit var onItemClickListener: OnItemClickListener

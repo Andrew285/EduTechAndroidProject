@@ -1,4 +1,4 @@
-package com.example.edutechproject.features
+package com.example.edutechproject.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,8 +7,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.edutechproject.R
 import com.example.edutechproject.databinding.ActivityMainBinding
-import com.example.edutechproject.features.contacts.ContactsFragment
-import com.example.edutechproject.features.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -23,11 +21,5 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val homeFragment = HomeFragment()
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.mainFrameLayout, homeFragment)
-            .commit()
     }
 }

@@ -1,4 +1,4 @@
-package com.example.edutechproject.features.async_tasks
+package com.example.edutechproject.view
 
 import DownloadImagesTask
 import android.os.Bundle

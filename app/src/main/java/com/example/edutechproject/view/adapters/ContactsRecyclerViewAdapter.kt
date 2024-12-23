@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edutechproject.R
-import com.example.edutechproject.features.contacts.ContactModel
+import com.example.edutechproject.models.ContactModel
 
 class ContactRecyclerViewAdapter(
     private val contactList: List<ContactModel>
