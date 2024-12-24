@@ -1,4 +1,4 @@
-package com.example.edutechproject.view.adapters
+package com.example.edutechproject.view.home
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edutechproject.R
-import com.example.edutechproject.models.HomeFeatureModel
+import com.example.edutechproject.data.models.HomeFeatureModel
 
 class HomeRecyclerViewAdapter(private val featuresList: List<HomeFeatureModel>): RecyclerView.Adapter<HomeRecyclerViewAdapter.FeatureViewHolder>() {
     private lateinit var onItemClickListener: OnItemClickListener

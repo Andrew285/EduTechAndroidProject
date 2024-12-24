@@ -1,4 +1,4 @@
-package com.example.edutechproject.view.adapters
+package com.example.edutechproject.view.contacts
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edutechproject.R
-import com.example.edutechproject.models.ContactModel
+import com.example.edutechproject.data.models.ContactModel
 
 class ContactRecyclerViewAdapter(
     private val contactList: List<ContactModel>

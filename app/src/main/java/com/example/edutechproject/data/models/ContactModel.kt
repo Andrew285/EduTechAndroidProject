@@ -1,4 +1,4 @@
-package com.example.edutechproject.models
+package com.example.edutechproject.data.models
 
 data class ContactModel (
     val displayName: String,

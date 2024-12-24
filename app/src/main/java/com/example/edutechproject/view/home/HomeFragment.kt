@@ -1,4 +1,4 @@
-package com.example.edutechproject.view
+package com.example.edutechproject.view.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,8 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.edutechproject.R
-import com.example.edutechproject.view.adapters.HomeRecyclerViewAdapter
 import com.example.edutechproject.databinding.FragmentHomeBinding
-import com.example.edutechproject.models.HomeFeatureModel
+import com.example.edutechproject.data.models.HomeFeatureModel
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -25,7 +24,8 @@ class HomeFragment : Fragment() {
         val featuresList = listOf(
             HomeFeatureModel(getString(R.string.feature_name_contact_list), R.id.action_homeFragment_to_contactsFragment),
             HomeFeatureModel(getString(R.string.feature_name_async_tasks), R.id.action_homeFragment_to_asyncTasksFragment),
-            HomeFeatureModel(getString(R.string.feature_name_shared_prefs), R.id.action_homeFragment_to_sharedPreferencesFragment)
+            HomeFeatureModel(getString(R.string.feature_name_shared_prefs), R.id.action_homeFragment_to_sharedPreferencesFragment),
+            HomeFeatureModel(getString(R.string.feature_name_navigation_component), R.id.action_homeFragment_to_navigationComponentFragment),
         )
 
         loadFeatures(featuresList)

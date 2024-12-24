@@ -1,8 +1,7 @@
-package com.example.edutechproject.view
+package com.example.edutechproject.view.shared_prefs
 
 import android.content.Context
 import android.os.Bundle
-import android.view.Display.Mode
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,8 +10,6 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.edutechproject.R
 import com.example.edutechproject.databinding.FragmentSharedPreferencesBinding
-import com.example.edutechproject.view.adapters.ColorRecyclerViewAdapter
-import com.example.edutechproject.viewmodels.SharedPrefsViewModel
 
 class SharedPreferencesFragment : Fragment() {
     private lateinit var binding: FragmentSharedPreferencesBinding

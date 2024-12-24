@@ -4,4 +4,8 @@
 
     <!--  TEXT SIZE  -->
     <dimen name="textSizeNormal">8sp</dimen>
+
+    <!--  LAYOUT DIMENS  -->
+    <dimen name="normalMarginHorizontal">20dp</dimen>
+    <dimen name="normalMargin">10dp</dimen>
 </resources>

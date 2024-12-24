@@ -7,6 +7,11 @@
     <!--    Features Names  -->
     <string name="feature_name_contact_list">Contact List</string>
     <string name="feature_name_async_tasks">Async Tasks</string>
+    <string name="feature_name_navigation_component">Navigation Component</string>
+
+    <!--  Drawer Menu  -->
+    <string name="homeItem">Home</string>
+    <string name="navigationItem">Navigation</string>
 
     <!--    SharedPreferencesFragment strings  -->
     <string name="feature_name_shared_prefs">Shared Preferences</string>
@@ -18,6 +23,21 @@
         Now you can close your app completely and open again.
         The data will be restored
     </string>
+
+    <!--  Navigation Component Fragment  -->
+    <string name="passingDataInfo">
+        Passing Data in Navigation Component are done using Safe args.
+        Click button below to pass some data to another fragment
+    </string>
+    <string name="passingDataBtn">Pass Data</string>
+    <string name="passingNoDataBtn">Pass NO Data</string>
+
+    <!--  Passed Safe Args Fragment  -->
+    <string name="passedDataSuccess">Data passed and retrieved successfully!</string>
+    <string name="passedDataError">Data was not passed</string>
+    <string name="numberDefaultValue">Number: %1$d</string>
+    <string name="stringDefaultValue">Text: %1$s</string>
+    <string name="booleanValue">Boolean: </string>
 
     <!--    Other strings  -->
     <string name="save">Save</string>

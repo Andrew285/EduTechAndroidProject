@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.edutechproject.view.HomeFragment"
+        android:name="com.example.edutechproject.view.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,10 +19,13 @@
         <action
             android:id="@+id/action_homeFragment_to_asyncTasksFragment"
             app:destination="@id/asyncTasksFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_navigationComponentFragment"
+            app:destination="@id/navigationComponentFragment" />
     </fragment>
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="com.example.edutechproject.view.ContactsFragment"
+        android:name="com.example.edutechproject.view.contacts.ContactsFragment"
         android:label="fragment_contacts"
         tools:layout="@layout/fragment_contacts" >
         <action
@@ -31,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/sharedPreferencesFragment"
-        android:name="com.example.edutechproject.view.SharedPreferencesFragment"
+        android:name="com.example.edutechproject.view.shared_prefs.SharedPreferencesFragment"
         android:label="fragment_shared_preferences"
         tools:layout="@layout/fragment_shared_preferences" >
         <action
@@ -40,10 +43,43 @@
     </fragment>
     <fragment
         android:id="@+id/asyncTasksFragment"
-        android:name="com.example.edutechproject.view.AsyncTasksFragment"
+        android:name="com.example.edutechproject.view.async_tasks.AsyncTasksFragment"
         android:label="AsyncTasksFragment" >
         <action
             android:id="@+id/action_asyncTasksFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationComponentFragment"
+        android:name="com.example.edutechproject.view.navigation_component.NavigationComponentFragment"
+        android:label="fragment_navigation_component"
+        tools:layout="@layout/fragment_navigation_component" >
+        <action
+            android:id="@+id/action_navigationComponentFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_navigationComponentFragment_to_passedSafeArgsFragment"
+            app:destination="@id/passedSafeArgsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passedSafeArgsFragment"
+        android:name="com.example.edutechproject.view.passed_safe_args.PassedSafeArgsFragment"
+        android:label="fragment_passed_safe_args"
+        tools:layout="@layout/fragment_passed_safe_args" >
+        <action
+            android:id="@+id/action_passedSafeArgsFragment_to_navigationComponentFragment"
+            app:destination="@id/navigationComponentFragment" />
+        <argument
+            android:name="Number"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="BoolValue"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+        <argument
+            android:name="Text"
+            app:argType="string"
+            android:defaultValue="empty"/>
     </fragment>
 </navigation>

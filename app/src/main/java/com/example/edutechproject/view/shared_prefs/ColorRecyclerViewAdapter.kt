@@ -1,4 +1,4 @@
-package com.example.edutechproject.view.adapters
+package com.example.edutechproject.view.shared_prefs
 
 import android.view.LayoutInflater
 import android.view.View

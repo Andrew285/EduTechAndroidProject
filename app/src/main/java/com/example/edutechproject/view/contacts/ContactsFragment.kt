@@ -1,4 +1,4 @@
-package com.example.edutechproject.view
+package com.example.edutechproject.view.contacts
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -12,9 +12,8 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.edutechproject.view.adapters.ContactRecyclerViewAdapter
 import com.example.edutechproject.databinding.FragmentContactsBinding
-import com.example.edutechproject.models.ContactModel
+import com.example.edutechproject.data.models.ContactModel
 
 class ContactsFragment : Fragment() {
     private lateinit var binding: FragmentContactsBinding

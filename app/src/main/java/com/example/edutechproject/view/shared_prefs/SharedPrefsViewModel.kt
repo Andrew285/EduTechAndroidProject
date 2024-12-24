@@ -1,13 +1,12 @@
-package com.example.edutechproject.viewmodels
+package com.example.edutechproject.view.shared_prefs
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.edutechproject.R
-import com.example.edutechproject.models.UserData
+import com.example.edutechproject.data.models.UserData
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
