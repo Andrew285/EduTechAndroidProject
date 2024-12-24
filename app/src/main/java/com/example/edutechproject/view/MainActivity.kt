@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        //navHost
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHostFragment.navController
         drawerLayout = binding.drawerLayout
