@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -35,12 +37,29 @@ android {
         jvmTarget = "11"
     }
 
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.1.1"
+    }
+
     buildFeatures {
         viewBinding = true
+        compose = true
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
+
+    //Material3 Design
+    implementation(libs.androidx.material3)
+    implementation(libs.androidx.material3.adaptive.navigation.suite)
+
+    //Hilt
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
 
     //Kotlin Coroutines
     implementation(libs.kotlinx.coroutines.android)

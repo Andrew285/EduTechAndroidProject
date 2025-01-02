@@ -26,10 +26,10 @@ class HomeFragment : Fragment() {
             HomeFeatureModel(getString(R.string.feature_name_async_tasks), R.id.action_homeFragment_to_asyncTasksFragment),
             HomeFeatureModel(getString(R.string.feature_name_shared_prefs), R.id.action_homeFragment_to_sharedPreferencesFragment),
             HomeFeatureModel(getString(R.string.feature_name_navigation_component), R.id.action_homeFragment_to_navigationComponentFragment),
+            HomeFeatureModel(getString(R.string.feature_name_notes_app), R.id.action_homeFragment_to_notesActivity),
         )
 
         loadFeatures(featuresList)
-
         return binding.root
     }
 

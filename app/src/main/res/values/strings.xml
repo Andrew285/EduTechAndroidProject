@@ -8,6 +8,7 @@
     <string name="feature_name_contact_list">Contact List</string>
     <string name="feature_name_async_tasks">Async Tasks</string>
     <string name="feature_name_navigation_component">Navigation Component</string>
+    <string name="feature_name_notes_app">Notes App</string>
 
     <!--  Drawer Menu  -->
     <string name="homeItem">Home</string>
@@ -38,6 +39,20 @@
     <string name="numberDefaultValue">Number: %1$d</string>
     <string name="stringDefaultValue">Text: %1$s</string>
     <string name="booleanValue">Boolean: </string>
+
+    <!-- Notes Mini App   -->
+    <string name="notes_main_info_text">
+        This mini app is written using SQLite, Hilt and Kotlin Coroutines.
+        The GridLayout is used for XML layout design.
+        The ViewModel is used for saving state of activity
+    </string>
+    <string name="title_example">Title</string>
+    <string name="description_example">Description</string>
+    <string name="dataTime_example">31/12/2024</string>
+
+    <!-- Add Note Fragment   -->
+    <string name="note_enter_title">Enter Title:</string>
+    <string name="note_enter_description">Enter Description:</string>
 
     <!--    Other strings  -->
     <string name="save">Save</string>

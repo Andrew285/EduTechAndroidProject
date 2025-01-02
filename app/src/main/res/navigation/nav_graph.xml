@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_homeFragment_to_navigationComponentFragment"
             app:destination="@id/navigationComponentFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notesActivity"
+            app:destination="@id/notesActivity" />
     </fragment>
     <fragment
         android:id="@+id/contactsFragment"
@@ -82,4 +85,9 @@
             app:argType="string"
             android:defaultValue="empty"/>
     </fragment>
+    <activity
+        android:id="@+id/notesActivity"
+        android:name="com.example.edutechproject.view.mini_apps.notes.NotesActivity"
+        android:label="activity_notes"
+        tools:layout="@layout/activity_notes" />
 </navigation>
