@@ -8,6 +8,7 @@
     <string name="feature_name_contact_list">Contact List</string>
     <string name="feature_name_async_tasks">Async Tasks</string>
     <string name="feature_name_navigation_component">Navigation Component</string>
+    <string name="feature_name_exoplayer_media3">Media3 ExoPlayer</string>
 
     <!--  Drawer Menu  -->
     <string name="homeItem">Home</string>
@@ -38,6 +39,18 @@
     <string name="numberDefaultValue">Number: %1$d</string>
     <string name="stringDefaultValue">Text: %1$s</string>
     <string name="booleanValue">Boolean: </string>
+
+    <!--  Video Audio Fragment  -->
+    <string name="video_info">
+        By clicking on buttons bellow, you will be redirected to another activity where MP4 file will be shown
+    </string>
+    <string name="audio_info">
+        By clicking on button bellow, you will be redirected to another activity where MP3 file will be shown
+    </string>
+    <string name="video_1">Video 1</string>
+    <string name="video_2">Video 2</string>
+    <string name="audio">Audio</string>
+    <string name="url">url</string>
 
     <!--    Other strings  -->
     <string name="save">Save</string>
