@@ -40,7 +40,7 @@
     <string name="stringDefaultValue">Text: %1$s</string>
     <string name="booleanValue">Boolean: </string>
 
-    <!-- Notes Mini App   -->
+    <!-- Notes Fragment  -->
     <string name="notes_main_info_text">
         This mini app is written using SQLite, Hilt and Kotlin Coroutines.
         The GridLayout is used for XML layout design.
@@ -49,10 +49,20 @@
     <string name="title_example">Title</string>
     <string name="description_example">Description</string>
     <string name="dataTime_example">31/12/2024</string>
+    <string name="sqllite_load_notes_btn">SQLite</string>
+    <string name="room_load_notes_btn">Room</string>
+    <string name="firebase_load_notes_btn">Firebase Storage</string>
 
     <!-- Add Note Fragment   -->
     <string name="note_enter_title">Enter Title:</string>
     <string name="note_enter_description">Enter Description:</string>
+    <string name="note_edit_title">Edit Title:</string>
+    <string name="note_edit_description">Edit Description:</string>
+    <string name="note_edit_date">Edit Date:</string>
+    <string name="choose_date">Choose date</string>
+    <string name="add_note_btn">Add Note</string>
+    <string name="edit_note_btn">Edit Note</string>
+    <string name="delete_note_btn">Delete Note</string>
 
     <!--    Other strings  -->
     <string name="save">Save</string>

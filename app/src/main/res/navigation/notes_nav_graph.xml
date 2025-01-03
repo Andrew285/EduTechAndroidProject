@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/notes_nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_nav_graph"
+    app:startDestination="@id/notesFragment">
 
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.edutechproject.features.notes_mini_app.presentation.ui.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.edutechproject.features.notes_mini_app.presentation.ui.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <argument
+            android:name="databaseVariant"
+            app:argType="com.example.edutechproject.features.notes_mini_app.presentation.viewmodels.NotesViewModel$DATABASE_VARIANT"
+            android:defaultValue="SQLITE" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.edutechproject.features.notes_mini_app.presentation.ui.NoteFragment"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" >
+        <action
+            android:id="@+id/action_noteFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.example.edutechproject.features.notes_mini_app.data.models.Note" />
+        <action
+            android:id="@+id/action_noteFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+        <argument
+            android:name="databaseVariant"
+            app:argType="com.example.edutechproject.features.notes_mini_app.presentation.viewmodels.NotesViewModel$DATABASE_VARIANT"
+            android:defaultValue="SQLITE" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.example.edutechproject.features.notes_mini_app.presentation.ui.EditNoteFragment"
+        android:label="fragment_edit_note"
+        tools:layout="@layout/fragment_edit_note" >
+        <action
+            android:id="@+id/action_editNoteFragment_to_noteFragment"
+            app:destination="@id/noteFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.example.edutechproject.features.notes_mini_app.data.models.Note" />
+        <action
+            android:id="@+id/action_editNoteFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <argument
+            android:name="databaseVariant"
+            app:argType="com.example.edutechproject.features.notes_mini_app.presentation.viewmodels.NotesViewModel$DATABASE_VARIANT"
+            android:defaultValue="SQLITE" />
+    </fragment>
 </navigation>

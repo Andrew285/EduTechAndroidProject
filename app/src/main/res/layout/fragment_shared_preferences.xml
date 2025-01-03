@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.shared_prefs.SharedPreferencesFragment"
+    tools:context=".features.shared_prefs.presentation.ui.SharedPreferencesFragment"
     android:paddingHorizontal="32dp"
     android:orientation="vertical">
 
@@ -73,7 +73,7 @@
         android:layout_marginTop="14dp"
         />
 
-    <com.example.edutechproject.view.custom.InfoTextView
+    <com.example.edutechproject.utils.custom_views.InfoTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -88,7 +88,7 @@
         android:layout_marginTop="14dp"
         android:layout_gravity="center_horizontal"/>
 
-    <com.example.edutechproject.view.custom.InfoTextView
+    <com.example.edutechproject.utils.custom_views.InfoTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -103,7 +103,7 @@
         android:layout_marginTop="14dp"
         android:layout_gravity="center_horizontal"/>
 
-    <com.example.edutechproject.view.custom.InfoTextView
+    <com.example.edutechproject.utils.custom_views.InfoTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

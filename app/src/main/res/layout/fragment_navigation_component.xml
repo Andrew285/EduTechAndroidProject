@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.navigation_component.NavigationComponentFragment"
+    tools:context=".features.navigation_component.presentation.NavigationComponentFragment"
     android:layout_marginHorizontal="@dimen/normalMarginHorizontal">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:orientation="vertical">
 
-        <com.example.edutechproject.view.custom.InfoTextView
+        <com.example.edutechproject.utils.custom_views.InfoTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:textSize="13sp"

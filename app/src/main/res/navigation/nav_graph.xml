@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.edutechproject.view.home.HomeFragment"
+        android:name="com.example.edutechproject.features.home.presentation.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="com.example.edutechproject.view.contacts.ContactsFragment"
+        android:name="com.example.edutechproject.features.contacts.presentation.ui.ContactsFragment"
         android:label="fragment_contacts"
         tools:layout="@layout/fragment_contacts" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/sharedPreferencesFragment"
-        android:name="com.example.edutechproject.view.shared_prefs.SharedPreferencesFragment"
+        android:name="com.example.edutechproject.features.shared_prefs.presentation.ui.SharedPreferencesFragment"
         android:label="fragment_shared_preferences"
         tools:layout="@layout/fragment_shared_preferences" >
         <action
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/asyncTasksFragment"
-        android:name="com.example.edutechproject.view.async_tasks.AsyncTasksFragment"
+        android:name="com.example.edutechproject.features.async_tasks.presentation.AsyncTasksFragment"
         android:label="AsyncTasksFragment" >
         <action
             android:id="@+id/action_asyncTasksFragment_to_homeFragment"
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigationComponentFragment"
-        android:name="com.example.edutechproject.view.navigation_component.NavigationComponentFragment"
+        android:name="com.example.edutechproject.features.navigation_component.presentation.NavigationComponentFragment"
         android:label="fragment_navigation_component"
         tools:layout="@layout/fragment_navigation_component" >
         <action
@@ -66,7 +66,7 @@
     </fragment>
     <fragment
         android:id="@+id/passedSafeArgsFragment"
-        android:name="com.example.edutechproject.view.passed_safe_args.PassedSafeArgsFragment"
+        android:name="com.example.edutechproject.features.passed_safe_args.PassedSafeArgsFragment"
         android:label="fragment_passed_safe_args"
         tools:layout="@layout/fragment_passed_safe_args" >
         <action
@@ -87,7 +87,7 @@
     </fragment>
     <activity
         android:id="@+id/notesActivity"
-        android:name="com.example.edutechproject.view.mini_apps.notes.NotesActivity"
+        android:name="com.example.edutechproject.features.notes_mini_app.presentation.ui.NotesActivity"
         android:label="activity_notes"
         tools:layout="@layout/activity_notes" />
 </navigation>

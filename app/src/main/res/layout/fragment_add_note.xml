@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.mini_apps.notes.AddNoteFragment"
-    android:layout_margin="@dimen/normalMargin"
+    tools:context=".features.notes_mini_app.presentation.ui.AddNoteFragment"
+    android:padding="@dimen/normalMargin"
     android:orientation="vertical">
 
     <TextView
@@ -14,19 +14,28 @@
         android:textSize="16sp"/>
     
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/note_enter_title"
+        android:text="@string/note_enter_description"
         android:textSize="16sp"
         android:layout_marginTop="20dp"/>
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:maxLines="20"/>
-    
+
+    <Button
+        android:id="@+id/addNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_note_btn"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
 </LinearLayout>
